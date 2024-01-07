@@ -6,7 +6,7 @@ export type ParameterValue = {
         temperature?: number,
         max_tokens?: number,
         top_k?: number,
-        chat_id?: number
+        chat_id?: string
     }
 }
 
@@ -15,7 +15,7 @@ export class Parameter {
                 protected temperature: number = 0.5,
                 protected max_tokens: number = 2048,
                 protected top_k: number = 4,
-                protected chat_id?: number) {
+                protected chat_id?: string) {
 
     }
 
